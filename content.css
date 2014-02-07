@@ -1,0 +1,80 @@
+
+
+
+#extension-comments-toolbar
+{
+  padding:5px;
+}
+
+#extension-comments
+{
+
+  border: 1px solid #e6e6e6;
+  /*margin-left:-1px;
+  margin-right:-1px;*/
+
+}
+
+#extension-comments #watch-discussion
+{
+  border: none;
+}
+
+#extension-comments-toolbar
+{
+  
+}
+
+#extension-comments-switcher
+{
+  /*display: inline-block;*/
+  text-align: center;
+}
+
+#extension-comments-switcher .switcher-option
+{
+  padding:5px;
+}
+
+
+#extension-comments-switcher .switcher-active
+{
+  font-weight:bold;
+}
+
+#reddit-comments .header
+{
+  text-align: center;
+}
+
+
+#reddit-comments .header .commentIndex.activeIndex
+{
+  font-weight:bold;
+}
+
+
+#reddit-comments .comment-loading-image
+{
+  padding:15px;
+  padding-top:30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+#reddit-comments .comments-error
+{
+  text-align: center;
+}
+
+#reddit-comments .header .post-title
+{
+  color: black;
+  padding: 5px;
+}
+
