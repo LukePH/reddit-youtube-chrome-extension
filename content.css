@@ -15,6 +15,7 @@
 
 }
 
+
 #extension-comments #watch-discussion
 {
   border: none;
@@ -42,6 +43,11 @@
   font-weight:bold;
 }
 
+#extension-comments .container
+{
+  position:relative !important; /* override youtube */
+}
+
 #reddit-comments .header
 {
   text-align: center;
@@ -52,6 +58,7 @@
 {
   font-weight:bold;
 }
+
 
 
 #reddit-comments .comment-loading-image

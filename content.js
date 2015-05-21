@@ -124,8 +124,8 @@ function findRedditComments()
   lastCheckedVideoId=getParameterByName("v");
   
   youtubeUrl="http://www.youtube.com/watch?v="+getParameterByName("v");
-  //searchUrl="http://www.reddit.com/submit.json?url="+youtubeUrl
-  searchUrl="http://www.reddit.com/search.json?q=url:"+youtubeUrl;
+  //searchUrl="https://www.reddit.com/submit.json?url="+youtubeUrl
+  searchUrl="https://www.reddit.com/search.json?q=url:"+youtubeUrl;
   
   var header=$("#reddit-comments .header");
   var loadingImage=$("<img/>").attr("src",chrome.extension.getURL('images/loading-slide.gif') ).addClass("comment-loading-image") ;
@@ -166,7 +166,7 @@ function findRedditComments()
         var header=$("#reddit-comments .header");
         header.empty();
         header.append( $("<h1 class='post-title'></h1>").text( "No posts found for this video" ) );
-        header.append( $("<h1 class=''></h1>").append( $("<a></a>").text("Start a new reddit post here").attr('href', "http://www.reddit.com/submit?url="+youtubeUrl) ) );
+        header.append( $("<h1 class=''></h1>").append( $("<a></a>").text("Start a new reddit post here").attr('href', "https://www.reddit.com/submit?url="+youtubeUrl) ) );
         showTab($("#show-youtube-comments"), $("#youtube-comments")); //switch to youtube comments (needs to be setting)
         return;
       }
@@ -196,7 +196,7 @@ function findRedditComments()
 function showRedditCommentsByIndex(commentIndex)
 {
   var post=lastCommentSearch[commentIndex];
-  var url="http://www.reddit.com"+post["permalink"];
+  var url="https://www.reddit.com"+post["permalink"];
   
   try
   {
@@ -212,14 +212,14 @@ function showRedditCommentsByIndex(commentIndex)
     
     //Setup info..
     var postInfo=$("<div class='post-options'></div>");
-    var subredditLink=$("<a></a>").attr('href', "http://reddit.com/r/"+post["subreddit"]).text("r/"+post["subreddit"])
+    var subredditLink=$("<a></a>").attr('href', "https://reddit.com/r/"+post["subreddit"]).text("r/"+post["subreddit"])
     postInfo.append( subredditLink );
     header.append(postInfo);
     
     //Setup threads nav..
     
     var postOptions=$("<div class='post-options'></div>");
-    //var link=$("<a></a>").attr('href', "http://reddit.com/r/"+post["subreddit"]).text("r/"+post["subreddit"])
+    //var link=$("<a></a>").attr('href', "https://reddit.com/r/"+post["subreddit"]).text("r/"+post["subreddit"])
     var navSpan=$("<span></span>");
     navSpan.append("Threads: ( ");
     if (lastCommentSearch.length<=1)
