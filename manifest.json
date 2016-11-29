@@ -1,7 +1,7 @@
 {
   "name": "Luke's reddit on Youtube™",
   "description": "Adds reddit comments to youtube videos",
-  "version": "0.28",
+  "version": "0.29",
   "permissions": [
     "http://*.youtube.com/*", "https://*.youtube.com/*", "http://www.reddit.com/*", "https://www.reddit.com/*"
   ],
