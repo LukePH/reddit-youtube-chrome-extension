@@ -317,7 +317,7 @@ function setRedditComments(url)
         
       if (comments.length>0)
       {
-		comments.html(comments.html().replace(/href\="\/r\//g, 'href="https://www.reddit.com/r/'));
+        comments.html(comments.html().replace(/href\="\/r\//g, 'href="https://www.reddit.com/r/'));
 		  
         container.append(comments);
       }
